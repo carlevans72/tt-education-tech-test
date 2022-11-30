@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import { Nav, TvTrendingContainer } from '../components';
-import styles from '../styles/Home.module.css';
+import { MovieContainer, Nav } from '../../components';
 
-export default function Home() {
+export default function MoviesPage() {
   return (
     <div>
       <Head>
@@ -12,7 +11,7 @@ export default function Home() {
       </Head>
 
       <Nav />
-      <TvTrendingContainer />
+      <MovieContainer />
     </div>
   );
 }
