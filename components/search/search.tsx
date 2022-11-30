@@ -23,7 +23,7 @@ const Search = ({
   const year = new Date().getFullYear();
   const years = Array.from(new Array(20), (_value, index) => year - index);
 
-  const { data, isError, isLoading } = useQuery(
+  const { data } = useQuery(
     ['genre-list', mediaType],
     () => getGenreList(mediaType),
     {
